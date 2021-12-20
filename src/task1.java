@@ -44,15 +44,17 @@ public class task1 {
         }
         return 100;
     }
-
+/*
     public static void main(String args[]){
         Scanner in = new Scanner(System.in);
-        System.out.println("Input name of file: ");
-        String name = in.nextLine();
+       // System.out.println("Input name of file: ");
+       // String name = in.nextLine();
+        String name = args[0];
         task1 task = new task1(name);
         System.out.println("Input for search: ");
         String str = in.nextLine();
         System.out.println("string: " + task.search(str));
         System.out.println("count: " + task.count(str));
-    }
+
+    }*/
 }

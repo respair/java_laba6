@@ -17,7 +17,9 @@ public class DirWalk {
         System.out.println("\n=== Dir walk ===");
         // Print directory list here
         for(Path file:stream){
-            System.out.println(file.getFileName());
+            if(Files.isDirectory(file)) {
+                System.out.println(file.getFileName());
+            }
         }
 
     }catch (IOException e){
